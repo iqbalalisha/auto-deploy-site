@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CI/CD Demo with GitHub Actions</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 2px solid #eee;
+      margin-bottom: 30px;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    .container {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .feature {
+      margin: 20px 0;
+      padding: 15px;
+      background-color: white;
+      border-radius: 4px;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 2px solid #eee;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our CI/CD Demo</h1>
+    <p>Automated Deployment with GitHub Actions</p>
+  </header>
+
+  <div class="container">
+    <div class="feature">
+      <h2>🚀 Continuous Integration</h2>
+      <p>This project demonstrates how to set up automated deployment using GitHub Actions. Every time we push changes to the main branch, our workflow automatically:</p>
+      <ul>
+        <li>Builds the project</li>
+        <li>Runs tests (if configured)</li>
+        <li>Deploys to GitHub Pages</li>
+      </ul>
+    </div>
+
+    <div class="feature">
+      <h2>🔧 How It Works</h2>
+      <p>The deployment process is triggered by changes to the repository. Our workflow file (.github/workflows/deploy.yml) defines the steps needed to:</p>
+      <ul>
+        <li>Check out the code</li>
+        <li>Configure GitHub Pages</li>
+        <li>Upload the build artifacts</li>
+        <li>Deploy to GitHub Pages</li>
+      </ul>
+    </div>
+
+    <div class="feature">
+      <h2>💡 Benefits</h2>
+      <p>Using CI/CD with GitHub Actions provides several advantages:</p>
+      <ul>
+        <li>Automated deployment process</li>
+        <li>Consistent deployment environment</li>
+        <li>Quick feedback on changes</li>
+        <li>Reduced manual work</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Last updated: <span id="last-updated"></span></p>
+    <p>Powered by GitHub Actions and GitHub Pages</p>
+  </footer>
+
+  <script>
+    document.getElementById('last-updated').textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html> 
